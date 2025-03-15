@@ -76,7 +76,7 @@ pip install -r requirements.txt
 
 4. Download the required models:
 ```bash
-python scripts/install_models.py
+python install_models.py
 ```
 
 5. Run Lidia with default settings:
@@ -279,7 +279,7 @@ Lidia's modular design makes it easy to extend with new models. Below are step-b
 
 1. **Identify a suitable Whisper model variant** on HuggingFace (e.g., `openai/whisper-tiny`, `openai/whisper-small`, `openai/whisper-medium`)
 
-2. **Update the model installation script** at `scripts/install_models.py`:
+2. **Update the model installation script** at `install_models.py`:
    ```python
    MODELS = {
        "audio": {
@@ -422,7 +422,7 @@ Lidia's modular design makes it easy to extend with new models. Below are step-b
 1. **Run the model installation script** to download new models:
    ```bash
    source venv/bin/activate  # Activate your virtual environment
-   python scripts/install_models.py
+   python install_models.py
    ```
 
 2. **Test the new model** by running Lidia:
