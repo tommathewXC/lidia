@@ -29,17 +29,23 @@ git clone https://github.com/yourusername/lidia.git
 cd lidia
 ```
 
-2. Install dependencies:
+2. Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Download the required models:
+4. Download the required models:
 ```bash
 python scripts/install_models.py
 ```
 
-4. Run Lidia with default settings:
+5. Run Lidia with default settings:
 ```bash
 python main.py
 ```
@@ -80,6 +86,10 @@ Lidia is organized into several modular components:
 ### Basic Usage
 
 ```bash
+# Make sure your virtual environment is activated
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Run with default settings
 python main.py
 ```
 
@@ -120,6 +130,27 @@ make collect
 # Clean all __pycache__ directories
 make clean
 ```
+
+## 🧠 Model Repository
+
+Lidia currently uses HuggingFace as its primary model repository. Models are downloaded during the installation process and stored locally for optimal performance.
+
+### Current Implementation
+
+The system downloads models from HuggingFace for:
+- Speech recognition (Whisper)
+- Text-to-speech (SpeechT5)
+- LLM functionality (when using local mode)
+- OCR processing (TrOCR)
+- Image captioning (BLIP)
+
+### Future Extensions
+
+The architecture is designed to be model-repository agnostic. Future versions will:
+- Support multiple model repositories beyond HuggingFace
+- Allow easy switching between different model sources
+- Enable custom model integrations from any open-source repository
+- Support model mixing from different sources
 
 ## 📚 How It Works
 
