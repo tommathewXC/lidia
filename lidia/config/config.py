@@ -1,7 +1,7 @@
 global_config = {
     "speech_to_text": "models/audio/whisper-base",
     "llm": "models/llm/DeepSeek-R1-Distill-Llama-70B",
-    "ollama_model": "deepseek-r1:70b",
+    "ollama_model": "llama3.3",
     "openai": {
         "model": "gpt-4o", 
         "api_key_path": "~/.accesstokens/openai-api",

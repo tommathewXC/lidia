@@ -97,9 +97,8 @@ class LLMAgent:
         return tools
 
     def _setup_agent(self) -> AgentExecutor:
-        """Set up the LangChain agent with custom prompting."""
-        
-        system_message = SystemMessage(content="""You are an AI assistant that can perceive the environment through vision and interact through speech.
+        name = global_config['voice_settings']['name']
+        system_message = SystemMessage(content=f"Your name is {name}" + """, you are an AI assistant that can perceive the environment through vision and interact through speech.
         When a user asks about time or date, ALWAYS use the get_current_datetime tool.
         When asked to look at or analyze the screen, ALWAYS use the take_screenshot tool.
         
