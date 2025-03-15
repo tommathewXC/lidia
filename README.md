@@ -17,6 +17,7 @@ Lidia is a voice-enabled AI assistant framework that integrates audio processing
 - [Configuration](#-configuration)
 - [Architecture](#-architecture)
 - [How It Works](#-how-it-works)
+- [Demo](#-demo)
 - [Custom Tools and Actions](#-custom-tools-and-actions)
   - [Understanding the Tool System](#understanding-the-tool-system)
   - [Existing Tools](#existing-tools)
@@ -158,6 +159,22 @@ Lidia is organized into several modular components:
 4. **Tool Integration**: The LLM can use tools like screenshot analysis when needed
 5. **Response Generation**: Responses are generated and streamed from the LLM
 6. **Speech Synthesis**: Text responses are converted to speech using the configured TTS system
+
+## 🎬 Demo
+
+[![Lidia Demo](https://img.youtube.com/vi/KN5Jbkyp0z4/maxresdefault.jpg)](https://www.youtube.com/watch?v=KN5Jbkyp0z4)
+*Click the image above to watch the demo video on YouTube*
+
+### Demo Environment
+
+The demonstration showcases Lidia running on a MacBook Pro, highlighting:
+
+- **Natural Voice Interaction**: Lidia responds to spoken queries with synthesized speech
+- **Screen Analysis**: The assistant can capture and analyze screen content in real-time
+- **Multi-modal Capabilities**: Integration of vision, audio, and language understanding
+- **Tool Usage**: Examples of the assistant utilizing datetime and screenshot tools
+
+The demo illustrates how Lidia functions in a real-world environment, using the system's voice synthesis capabilities and showing the responsive nature of the assistant running entirely on local hardware.
 
 ## 🧰 Custom Tools and Actions
 
